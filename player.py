@@ -57,7 +57,7 @@ class Sequencer:
                  news_chance=0.12, songs_between_news=6, news_enabled=True,
                  no_repeat_window=3, clock_hour_fn=None):
         self.station = station
-        self._rng = random.Random()
+        self._rng = random.Random(seed)
 
         self.dj_chance = dj_chance
         self.ad_chance = ad_chance
